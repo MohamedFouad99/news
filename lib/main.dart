@@ -1,7 +1,8 @@
 // ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors
 
 import 'package:flutter/material.dart';
-import 'package:news/home/category/category_details.dart';
+import 'package:news/details/details_screen.dart';
+
 import 'package:news/home/home_screen.dart';
 
 void main() {
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
       title: 'news',
       routes: {
         HomeScreen.routeName: (context) => HomeScreen(),
+        DetailsScreen.Route_Name: (context) => DetailsScreen(),
       },
       initialRoute: HomeScreen.routeName,
       theme: ThemeData(
